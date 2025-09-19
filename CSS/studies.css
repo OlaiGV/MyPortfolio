@@ -1,0 +1,145 @@
+.studies-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.img-studies {
+  width: 35vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.studies {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+.title {
+  font-family: var(--fuente-logo);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.study-section {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  font-family: var(--fuente-texto);
+  font-size: 1em;
+}
+
+.study-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.study-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.study-info h3 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.2rem;
+  color: var(--color-texto);
+}
+
+.study-info .center-name,
+.study-info .year {
+  font-family: var(--fuente-boton);
+  font-size: 0.8rem;
+  text-decoration: bold;
+  font-weight: 500;
+}
+
+.study-info .location {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .studies-container {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    flex: 1;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .img-studies {
+    width: 60%;
+  }
+
+  .studies {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-flow: column nowrap;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title {
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 400px;
+    left: -80px;
+  }
+
+  .study-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .study {
+    gap: 0;
+    padding: 0;
+  }
+
+  .study-icon {
+    font-size: 1.6em;
+  }
+
+  .study-info h3 {
+    font-size: 1.1em;
+  }
+
+  .center-name,
+  .year,
+  .location {
+    font-size: 0.8em !important;
+    text-align: center !important;
+  }
+}

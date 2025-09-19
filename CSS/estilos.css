@@ -1,0 +1,20 @@
+@import url(./reset.css);
+@import url(./tipografias.css);
+@import url(./botones.css);
+
+@import url(./header.css);
+@import url(./studies.css);
+@import url(./projects.css);
+@import url(./contact.css);
+
+body {
+  user-select: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
