@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
 :root {
     --fuente-titulos: 'Luckiest Guy', cursive;
     --fuente-texto: 'Arial', sans-serif;
     --fuente-logo: 'Pacifico', cursive;
     --fuente-boton: 'Walter Turncoat', cursive;
+    --fuente-animada: "Slackey", sans-serif;
 }
