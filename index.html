@@ -1,96 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OlaiGV - Web Designer</title>
+    <meta
+      name="description"
+      content="Portfolio de Olai Garcia Villar, Backend Java Developer. Experiencia, formacion academica y proyectos destacados."
+    />
+    <meta name="theme-color" content="#1f2f5e" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="OlaiGV Portfolio" />
+    <meta property="og:title" content="Olai Garcia Villar | Backend Java Developer" />
+    <meta
+      property="og:description"
+      content="Desarrollador backend con experiencia en Java, Spring y proyectos bancarios. Portfolio con experiencia, proyectos y contacto directo."
+    />
+    <meta property="og:url" content="https://olaigv.github.io/MyPortfolio/" />
+    <meta
+      property="og:image"
+      content="https://olaigv.github.io/MyPortfolio/Resources/images-app/fondo-laptop.png"
+    />
+    <meta property="og:image:alt" content="Vista principal del portfolio de Olai Garcia Villar" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Olai Garcia Villar | Backend Java Developer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio profesional con experiencia en Java, Spring y desarrollo backend en entorno bancario."
+    />
+    <meta
+      name="twitter:image"
+      content="https://olaigv.github.io/MyPortfolio/Resources/images-app/fondo-laptop.png"
+    />
+
+    <title>OlaiGV - Full Stack Developer</title>
     <link rel="stylesheet" href="./CSS/estilos.css" />
-    <script src="./JS/script.js"></script>
+    <script src="./JS/script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/7d303211a2.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <article class="nav-header">
+    <header id="inicio">
+      <nav class="top-nav" aria-label="Navegacion principal">
+        <a class="brand" href="#inicio">OlaiGV</a>
+        <ul class="top-nav-links">
+          <li><a href="#formacion">Formacion</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-header">
         <section class="hero">
           <h1 class="typewriter">Olai G.V - Web Designer</h1>
           <p class="hero-description">
             "Your one-stop solution for stunning web designs."
           </p>
-          <button class="button type1">
-            <span class="btn-txt">
-              <a href="#contact" class="btn">Get in Touch</a>
-            </span>
-          </button>
+          <a href="#contact" class="button type1 btn">
+            <span class="btn-txt">Contactar</span>
+          </a>
         </section>
-        <section class="rrss">
+
+        <ul class="rrss" aria-label="Redes sociales">
           <li>
-            <a href="https://linkedin.com/in/olai-garcia-villar"
+            <a
+              href="https://linkedin.com/in/olai-garcia-villar"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de Olai"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/olai_gv"
+            <a
+              href="https://www.instagram.com/olai_gv"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de Olai"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </li>
           <li>
-            <a href="https://github.com/OlaiGV"
+            <a
+              href="https://github.com/OlaiGV"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub de Olai"
               ><i class="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/@OlaiGV/videos"
+            <a
+              href="https://www.youtube.com/@OlaiGV/videos"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Canal de YouTube de Olai"
               ><i class="fa-brands fa-youtube"></i
             ></a>
           </li>
-        </section>
-      </article>
+        </ul>
+      </div>
     </header>
     <main>
-      <article class="studies-container">
+      <section class="studies-container" id="formacion">
         <img
           src="./Resources/images-app/studies.jpg"
-          alt=""
+          alt="Zona de trabajo con tecnologia"
           class="img-studies"
         />
         <article class="studies">
-          <h1 class="title">Studies</h1>
+          <h1 class="title">Formacion y Experiencia</h1>
 
-          <article class="study-section">
-            <section class="study">
-              <div class="study-content">
-                <div class="study-icon">
-                  <i class="fa-solid fa-terminal"></i>
+          <section class="resume-grid">
+            <article class="resume-panel" aria-labelledby="formation-title">
+              <h2 id="formation-title" class="panel-title">Formacion</h2>
+
+              <article class="study">
+                <div class="study-content">
+                  <div class="study-icon">
+                    <i class="fa-solid fa-terminal"></i>
+                  </div>
+                  <div class="study-info">
+                    <h3>Desarrollo de Aplicaciones Multiplataforma</h3>
+                    <p class="center-name">🏫 IES Juan Jose Calvo Miguel</p>
+                    <p class="year">📅 2021/2023</p>
+                    <p class="location">📍 Sotrondio, Asturias</p>
+                  </div>
                 </div>
-                <div class="study-info">
-                  <h3>Desarrollo de Aplicaciones Multiplataforma</h3>
-                  <p class="center-name">IES Juan José Calvo Miguel</p>
-                  <p class="year">2021/2023</p>
-                  <p class="location">📍 Sotrondio, Asturias</p>
+              </article>
+
+              <article class="study">
+                <div class="study-content">
+                  <div class="study-icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <div class="study-info">
+                    <h3>Desarrollo de Aplicaciones Web</h3>
+                    <p class="center-name">🏫 CIFP La Laboral</p>
+                    <p class="year">📅 2023/2024</p>
+                    <p class="location">📍 Gijon, Asturias</p>
+                  </div>
                 </div>
-              </div>
-            </section>
-            <section class="study">
-              <div class="study-content">
-                <div class="study-icon">
-                  <i class="fa-solid fa-code"></i>
+              </article>
+            </article>
+
+            <article
+              class="resume-panel"
+              id="experiencia"
+              aria-labelledby="experience-title"
+            >
+              <h2 id="experience-title" class="panel-title">Experiencia</h2>
+
+              <article class="experience-item">
+                <div class="experience-head">
+                  <h3>Capgemini</h3>
+                  <p>Abr 2024 - Actualidad</p>
                 </div>
-                <div class="study-info">
-                  <h3>Desarrollo de Aplicaciones Web</h3>
-                  <p class="center-name">CIFP La Laboral</p>
-                  <p class="year">2023/2024</p>
-                  <p class="location">📍 Gijón, Asturias</p>
+                <p>
+                  Desarrollo backend con Java y ecosistema Spring en proyectos
+                  del sector bancario. Especializado en procesos batch,
+                  integracion con bases de datos relacionales y mantenimiento
+                  evolutivo de aplicaciones backend en entornos corporativos de
+                  alta exigencia.
+                </p>
+              </article>
+
+              <article class="experience-item">
+                <div class="experience-head">
+                  <h3>DXC Technology</h3>
+                  <p>Abr 2023 - Jun 2023</p>
                 </div>
-              </div>
-            </section>
-          </article>
+                <p>
+                  Colaboracion en iniciativas internas de testing y QA,
+                  reforzando buenas practicas de validacion y resolucion
+                  eficiente de incidencias.
+                </p>
+              </article>
+            </article>
+          </section>
         </article>
-      </article>
+      </section>
 
-      <article class="projects-container">
+      <section class="projects-container" id="proyectos">
         <h2>Proyectos Destacados</h2>
 
         <section class="projects">
@@ -99,6 +195,7 @@
               <img
                 src="./Resources/images-app/homer.jpg"
                 alt="Simpsons Newspaper"
+                loading="lazy"
               />
             </div>
             <div class="project-content">
@@ -108,6 +205,7 @@
                 href="https://olaigv.github.io/The-Simpson-s-Newspaper/"
                 class="project-btn"
                 target="_blank"
+                rel="noopener noreferrer"
                 >Visualizar proyecto</a
               >
             </div>
@@ -118,6 +216,7 @@
               <img
                 src="./Resources/images-app/appleMinimalist.jpg"
                 alt="Img Apple"
+                loading="lazy"
               />
             </div>
             <div class="project-content">
@@ -127,6 +226,7 @@
                 href="https://olaigv.github.io/Apple-GSAP/"
                 class="project-btn"
                 target="_blank"
+                rel="noopener noreferrer"
                 >Visualizar proyecto</a
               >
             </div>
@@ -134,7 +234,11 @@
 
           <div class="project-card">
             <div class="project-img">
-              <img src="./Resources/images-app/ropa.jpg" alt="Img ropa" />
+              <img
+                src="./Resources/images-app/ropa.jpg"
+                alt="Proyecto Street Wear"
+                loading="lazy"
+              />
             </div>
             <div class="project-content">
               <h3 class="project-title">Street Wear</h3>
@@ -143,54 +247,119 @@
                 href="https://olaigv.github.io/StreatWear-Spain/"
                 class="project-btn"
                 target="_blank"
+                rel="noopener noreferrer"
                 >Visualizar proyecto</a
               >
             </div>
           </div>
         </section>
-      </article>
+      </section>
 
-      <article class="contact-me" id="contact">
+      <section class="contact-me" id="contact">
         <section class="social">
-          <div class="social-left">
+          <article class="quick-contact" aria-label="Contacto rapido">
+            <h2>Contacto rapido</h2>
+            <p>Escribeme directamente por WhatsApp o Gmail.</p>
+
+            <div class="quick-actions">
+              <a
+                class="quick-action whatsapp"
+                href="https://wa.me/34665380532"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir WhatsApp"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+
+              <a
+                class="quick-action gmail"
+                href="mailto:olaivillar@gmail.com?subject=Contacto%20desde%20portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Enviar email por Gmail"
+              >
+                <i class="fa-solid fa-envelope"></i>
+                <span>Gmail</span>
+              </a>
+
+              <a
+                class="quick-action cv"
+                href="./CV-OlaiGV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                aria-label="Descargar CV en PDF"
+              >
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Descargar CV</span>
+              </a>
+            </div>
+          </article>
+
+          <aside class="social-left">
             <div class="mail-card">
               <strong>olaivillar@gmail.com</strong>
             </div>
             <div class="socialMedia-card">
               <strong>Socials: </strong>
-              <div class="icons-media">
+              <ul class="icons-media" aria-label="Redes sociales de contacto">
                 <li>
                   <a
                     href="https://linkedin.com/in/olai-garcia-villar"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn de Olai"
                   >
                     <i class="fa-brands fa-linkedin"></i
                   ></a>
                 </li>
 
                 <li>
-                  <a href="https://www.instagram.com/olai_gv"
+                  <a
+                    href="https://www.instagram.com/olai_gv"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram de Olai"
                     ><i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://github.com/OlaiGV"
+                  <a
+                    href="https://github.com/OlaiGV"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub de Olai"
                     ><i class="fa-brands fa-github"></i>
                   </a>
                 </li>
-              </div>
+              </ul>
             </div>
-          </div>
+          </aside>
         </section>
 
         <section class="name">
           <strong>Olai</strong>
-          <img
-            src="./Resources/images-app/IMG-Olai.jpg"
-            alt="Imagen de Olai G.V"
-          />
-          <strong>García</strong>
+          <div class="name-cards" aria-label="Galeria de retratos de Olai">
+            <img
+              class="name-card name-card-left"
+              src="./Resources/images-app/ImgOlai2.png"
+              alt="Foto de Olai en perfil izquierdo"
+            />
+            <img
+              class="name-card name-card-center"
+              src="./Resources/images-app/IMG-Olai.jpg"
+              alt="Imagen principal de Olai G.V"
+            />
+            <img
+              class="name-card name-card-right"
+              src="./Resources/images-app/ImgOlai3.png"
+              alt="Foto de Olai en perfil derecho"
+            />
+          </div>
+          <strong>García Villar</strong>
         </section>
 
         <section class="footer">
@@ -198,7 +367,7 @@
           <p>📍 Pola de Laviana, Asturias.</p>
           <p>Code by Olai G.V</p>
         </section>
-      </article>
+      </section>
     </main>
   </body>
 </html>

@@ -2,6 +2,9 @@
 .button {
   height: 40px;
   width: 200px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   background-color: transparent;
   cursor: pointer;
