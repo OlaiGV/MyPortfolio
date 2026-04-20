@@ -51,3 +51,4 @@ https://olaigv.github.io/MyPortfolio/
 
 - Eliminacion del contenedor de stack tecnologico y limpieza de referencias asociadas.
 - Refuerzo de la experiencia en Capgemini con foco en Java, Spring y banca.
+- Sustitucion del proyecto Simpsons Newspaper por GSAP Gallery en la seccion de proyectos destacados.
