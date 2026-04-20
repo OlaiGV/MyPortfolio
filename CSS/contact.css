@@ -1,5 +1,5 @@
 .contact-me {
-  min-height: auto;
+  min-height: 0;
   width: 100%;
   padding: 80px 20px 60px;
   display: flex;
@@ -29,7 +29,7 @@
   width: 100%;
   padding: 40px 20px;
   background: transparent;
-  min-height: auto;
+  min-height: 0;
 }
 
 .quick-contact {
@@ -108,80 +108,6 @@
   font-size: 0.95rem;
 }
 
-.social-left {
-  height: auto;
-  width: min(380px, 90vw);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  align-content: center;
-  margin-right: 0;
-  gap: 16px;
-}
-
-.mail-card,
-.socialMedia-card {
-  border-radius: 18px;
-  border: 1px solid rgba(31, 47, 94, 0.15);
-  background-color: white;
-  padding: 18px;
-  margin: 0;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.mail-card strong {
-  font-family: var(--fuente-boton);
-  font-size: 1.1rem;
-  color: #1f2f5e;
-  user-select: all;
-}
-
-.socialMedia-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-.socialMedia-card strong {
-  font-family: var(--fuente-boton);
-  font-size: 1.1rem;
-  color: #1f2f5e;
-  width: 100%;
-}
-
-.icons-media {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  width: 100%;
-}
-
-.icons-media li {
-  list-style: none;
-}
-
-.icons-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #f0f4fb;
-  color: #1f2f5e;
-  transition: background 0.2s ease, color 0.2s ease;
-  font-size: 1.2rem;
-}
-
-.icons-media a:hover {
-  background: #1f2f5e;
-  color: #ffffff;
-}
-
 .name {
   width: 100%;
   flex-direction: column;
@@ -258,11 +184,6 @@
     padding: 30px 20px;
     gap: 24px;
   }
-
-  .social-left {
-    margin-right: 0;
-    width: min(360px, 90vw);
-  }
 }
 
 @media (max-width: 600px) {
@@ -305,32 +226,6 @@
 
   .quick-action span {
     font-size: 0.92rem;
-  }
-
-  .social-left {
-    width: 100%;
-    gap: 12px;
-  }
-
-  .mail-card,
-  .socialMedia-card {
-    padding: 16px;
-    font-size: 0.95rem;
-  }
-
-  .mail-card strong,
-  .socialMedia-card strong {
-    font-size: 1rem;
-  }
-
-  .icons-media {
-    gap: 10px;
-  }
-
-  .icons-media a {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
   }
 
   .name {
